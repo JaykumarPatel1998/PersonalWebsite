@@ -238,6 +238,21 @@ article.active {
   border-radius: 3px;
 }
 
+.resume_button {
+  display: inline;
+  font-size: medium;
+  background: var(--orange-yellow-crayola);
+  color: black;
+  padding: 0.5rem;
+  border-radius: 3px;
+  opacity: 0.8;
+  margin-left: auto;
+}
+
+.resume_button:hover {
+  opacity: 1;
+}
+
 .has-scrollbar::-webkit-scrollbar {
   width: 5px; /* for vertical scrollbar */
   height: 5px; /* for horizontal scrollbar */
@@ -711,33 +726,10 @@ main {
 
 .clients { margin-bottom: 15px; }
 
-.clients-list {
-  display: flex;
-  justify-content: flex-start;
-  align-items: flex-start;
-  gap: 15px;
-  margin: 0 -15px;
-  padding: 25px;
-  padding-bottom: 25px;
-  overflow-x: auto;
-  scroll-behavior: smooth;
-  overscroll-behavior-inline: contain;
-  scroll-snap-type: inline mandatory;
-  scroll-padding-inline: 25px;
+.clients img {
+  display: inline;
 }
 
-.clients-item {
-  min-width: 50%;
-  scroll-snap-align: start;
-}
-
-.clients-item img {
-  width: 100%;
-  filter: grayscale(1);
-  transition: var(--transition-1);
-}
-
-.clients-item img:hover { filter: grayscale(0); }
 
 
 
@@ -810,6 +802,7 @@ main {
   color: var(--light-gray);
   font-weight: var(--fw-300);
   line-height: 1.6;
+  font-size: small;
 }
 
 
